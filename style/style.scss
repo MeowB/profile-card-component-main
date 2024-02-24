@@ -17,16 +17,26 @@ $c-dark-gray: hsl(0, 0%, 59%);
 }
 body {
 	background-color: $c-dark-cyan;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	background-image: url(../images/bg-pattern-top.svg);
+	background-repeat: no-repeat;
+	background-position: -350px -500px;
 
 	footer {
 		position: absolute;
 		bottom: 0;
 	}
+}
+
+.wrapper-bg {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	background-image: url(../images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat;
+	background-position: 500px 500px;
 }
 
 main {
@@ -110,4 +120,15 @@ main {
 
 		}
 	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-position: -750px -500px;
+	}
+	
+	.wrapper-bg {
+		background-position: 200px 400px;
+	}
+	
 }

@@ -7,15 +7,24 @@
 
 body {
   background-color: #19a2ae;
+  background-image: url(../images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  background-position: -350px -500px;
+}
+body footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper-bg {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-body footer {
-  position: absolute;
-  bottom: 0;
+  background-image: url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: 500px 500px;
 }
 
 main {
@@ -80,6 +89,16 @@ main .stats ul li span {
   color: #2d3248;
   font-weight: 700;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-position: -750px -500px;
+  }
+
+  .wrapper-bg {
+    background-position: 200px 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
